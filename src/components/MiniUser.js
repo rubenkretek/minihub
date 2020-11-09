@@ -1,6 +1,7 @@
 import React from "react";
 import imageLeft from "../img/front.png";
 import imageRight from "../img/rear.png";
+import data from "../ownersData";
 
 const MiniUser = () => {
   return (
