@@ -1,35 +1,28 @@
 import React from "react";
-import imageLeft from "../img/front.png";
-import imageRight from "../img/rear.png";
-import data from "../ownersData";
 
-const MiniUser = () => {
+
+const MiniUser = ({ owners }) => {
   return (
     <div className="mini-user">
       <div className="mini-user__images">
         <div className="mini-user__image">
-          <img src={imageLeft} />
+          <img src={owners.imageLeft} alt="Mini" />
         </div>
         <div className="mini-user__image">
-          <img src={imageRight} />
+          <img src={owners.imageRight} alt="Mini" />
         </div>
       </div>
       <div className="mini-user__details">
-        <h2>Ruben Kretek</h2>
+        <h2>{owners.Name}</h2>
         <p>
-          <span>West Sussex</span>
+          <span>{owners.location}</span>
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          auctor arcu sit amet justo consectetur tempor. Nunc est urna, dapibus
-          ut urna ut, scelerisque ultrices felis. Nunc et quam eget ante egestas
-          mattis. Sed gravida eros id ante rhoncus, vitae vestibulum arcu
-          mollis. Fusce interdum dui non rhoncus tincidunt.{" "}
-        </p>
+        <p>{owners.description}</p>
         <a
           className="button"
-          href="https://www.instagram.com/rubenkretek/"
+          href={owners.socialLink}
           target="_blank"
+          rel="noreferrer"
         >
           Follow
         </a>

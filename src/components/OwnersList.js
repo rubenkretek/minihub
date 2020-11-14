@@ -1,16 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import MiniUser from "./MiniUser";
 
-const OwnersList = () => {
+const OwnersList = ({ owners }) => {
   return (
     <div className="owners-list">
-      <MiniUser />
-      <MiniUser />
-      <MiniUser />
-      <MiniUser />
-      <MiniUser />
-      <MiniUser />
-      <MiniUser />
+      {owners.map((owners) => (
+        <MiniUser owners={owners} />
+      ))}
     </div>
   );
 };
