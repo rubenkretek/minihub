@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MiniUser from "./MiniUser";
 
 const OwnersList = ({ owners }) => {

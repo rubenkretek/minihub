@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Tags from "./Tags";
-import OwnersList from "./OwnersList";
+import Tags from "../components/Tags";
+import OwnersList from "../components/OwnersList";
 
 import data from "../ownersData";
 
